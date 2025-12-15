@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTAL NIGGER DEATH!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .counter {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>how many niggers have died globally as of today:</h1>
+    <div class="counter" id="globalCounter">0</div>
+
+    <h2>how many niggers died today by age-related diseases / non-communicable:</h2>
+    <div class="counter" id="ageRelatedCounter">0</div>
+
+    <h2>how many niggers died today by POLICE SHOOTINGS:</h2>
+    <div class="counter" id="policeShootingsCounter">0</div>
+
+    <h2>how many niggers died today by shootings (every intent):</h2>
+    <div class="counter" id="shootingsCounter">0</div>
+
+    <h2>how many niggers died today by gun homicides:</h2>
+    <div class="counter" id="gunHomicidesCounter">0</div>
+
+    <h2>how many niggers died today by melee weapons:</h2>
+    <div class="counter" id="meleeWeaponsCounter">0</div>
+
+    <script>
+        function updateCounter(element, increment) {
+            let value = parseFloat(element.innerText);
+            value += increment;
+            element.innerText = value.toFixed(2);
+        }
+
+        setInterval(() => {
+            updateCounter(document.getElementById('globalCounter'), 2.15);
+            updateCounter(document.getElementById('ageRelatedCounter'), 1.27);
+            updateCounter(document.getElementById('policeShootingsCounter'), 0.00016);
+            updateCounter(document.getElementById('shootingsCounter'), 0.008);
+            updateCounter(document.getElementById('gunHomicidesCounter'), 0.005);
+            updateCounter(document.getElementById('meleeWeaponsCounter'), 0.003);
+        }, 1000);
+    </script>
+</body>
+</html>
